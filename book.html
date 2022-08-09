@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Hotel Site</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="img/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#container-2">ROOMS</a></li>
+          <li><a href="#container-3">SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <button class="nav-button"><a href="book.html">BOOK ONLINE</a></button>
+      </nav>
+    </header>
+
+    <section>
+      <h1 class="booking2">Make Your Reservation</h1>
+      <br />
+      <div class="booking">
+        <div class="column">
+          <label class="text">Name</label> <br />
+          <input type="name" placeholder="Your Name" class="input-box" />
+        </div>
+        <div class="column">
+          <label class="text">Email</label> <br />
+          <input
+            type="email"
+            placeholder="Your Email Address"
+            class="input-box"
+          />
+        </div>
+        <div class="column">
+          <label class="text">Phone Number</label> <br />
+          <input
+            type="text"
+            placeholder="Your Phone Number"
+            class="input-box"
+          />
+        </div>
+        <div class="column">
+          <label class="text">Children</label> <br />
+          <input
+            type="text"
+            placeholder="Number of children"
+            class="input-box"
+          />
+        </div>
+        <div class="column">
+          <label class="text">Adult</label> <br />
+          <input type="text" placeholder="Number of adult" class="input-box" />
+        </div>
+        <div class="column">
+          <label class="text">Rooms</label> <br />
+          <select name="custom-select" class="input-box">
+            <option value="0">Single Rooms</option>
+            <option value="1">Double Rooms</option>
+            <option value="2">Deluxe Rooms</option>
+          </select>
+        </div>
+        <div class="column">
+          <label class="text">Check In</label> <br />
+          <input type="date" placeholder="dd/mm/yyyy" class="input-box" />
+        </div>
+        <div class="column">
+          <label class="text">Check Out</label> <br />
+          <input type="date" placeholder="dd/mm/yyyy" class="input-box" />
+        </div>
+      </div>
+    </section>
+
+    <div class="reservation">
+      <button class="btn-reservation"><a href="#">BOOK NOW</a></button>
+    </div>
+
+    <footer id="contact">
+      <div class="footer-1">
+        <div class="f-box">
+          <img src="img/logo.png" alt="logo" class="f-logo" />
+        </div>
+        <div class="f-box">
+          <p>
+            San Roque Navotas <br />
+            NCR, Metro Manila <br />
+            +63 900 000 0000 <br />
+            +63 900 000 0001 <br />
+            info@thehotel.com <br />
+          </p>
+        </div>
+        <div class="f-box">
+          <i class="fa-brands fa-facebook logo1"></i><span> Facebook </span>
+          <br />
+          <i class="fa-brands fa-instagram logo1"></i><span> Instagram </span>
+          <br />
+          <i class="fa-brands fa-youtube logo1"></i><span> Youtube </span>
+          <br />
+          <i class="fa-brands fa-twitter logo1"></i><span> Twitter</span> <br />
+        </div>
+      </div>
+      <div class="footer-2">
+        <p>&copy 2022 Hotel Site</p>
+      </div>
+    </footer>
+  </body>
+</html>

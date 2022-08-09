@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* Navigation section */
+
+header {
+  padding: 20px 10%;
+  background-color: rgba(65, 43, 4, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+nav .logo {
+  width: 8rem;
+}
+
+h1 {
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 10px;
+}
+
+nav ul li {
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul li a:hover {
+  cursor: pointer;
+  color: #e4bea3;
+  transition: .5s;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #b98d6e;
+  font-size: 1rem;
+}
+
+.nav-button:hover {
+  background-color: #985321;
+  transition: .5s;
+}
+
+.nav-button a {
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+
+/* Hero Selection */
+
+#container-1 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right,rgb(39, 24, 3),rgba(0,0,0,0)),
+              url(img/photo1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+#container-1 > h1 {
+  padding-top: 15rem;
+  margin: 0 10%;
+  font-size: 4rem;
+}
+
+#container-1 > h2 {
+  margin: 0 10%;
+  font-size: 2rem;
+  color: rgb(244, 248, 0);
+}
+
+#container-1 ul {
+  margin: 0 13%;
+  padding-top: 30px;
+  list-style: none;
+}
+
+#container-1 ul li {
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+#container-1 ul li:hover {
+  color:rgb(244, 248, 0);
+  transition: .5s;
+}
+
+/* 2nd container */
+
+#container-2 {
+  padding: 50px 10%;
+}
+
+#container-2 .h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #deb666;
+}
+
+#container-2 .p-1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.rooms {
+  display: flex;  
+}
+
+.rooms p {
+  display: inline-block;
+  background-color: rgb(255, 255, 0);
+  margin: 7px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  position: absolute;
+  font-size: 15px;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.room1 .rooms-image {
+  width: 100%;
+  transition: 1s ease;
+}
+
+.room1 .rooms-image:hover {
+  transform: scale(1.10);
+}
+
+.room1 {
+  margin: 0 5px;
+  background-color: rgba(191, 180, 160, 0.2);
+  padding-bottom: 7px;
+  overflow: hidden;
+}
+
+.room1 .roomflex {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 10px;
+  overflow: hidden;
+}
+
+.room1 .fave {
+  background-color: #b98d6e;
+  border: none;
+}
+
+.room1 .fave a {
+  line-height: 30px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.room1 .fave:hover {
+  background-color: #985321;
+  transition: .3s;
+}
+
+.room1 .fave a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+
+.view-all {
+  margin-top: 2rem;
+}
+
+div .view-btn {
+  display: block;
+  margin: auto;
+  background-color: #d0a586;
+  border: none;
+}
+
+div .view-btn a {
+  line-height: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+div .view-btn:hover {
+  background-color: #985321;
+  transition: .5s;
+}
+
+/* 3rd container: SERVICES */
+
+#container-3 {
+  padding: 50px 10%;
+  background-color: rgb(241, 232, 220);
+}
+
+#container-3 .h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #deb666;
+}
+
+#container-3 .p-1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#container-3 .services {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(4,1fr);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#container-3 .p-2 {
+  margin-bottom: 50px;
+}
+
+#container-3 .services .services-images {
+  width: 100%;
+  transition: 1s ease;
+}
+
+#container-3 .services .services-images:hover {
+  transform: scale(1.05);
+}
+
+#container-3 .grid {
+  padding: 25px;
+  background-color: #e7cfbd;
+  border-bottom: 2px solid white;
+}
+
+#container-3 .services h2 {
+  padding: 20px 0;
+}
+
+#container-3 .services .btn-services {
+  background-color: #d0a586;
+  border: none;
+  border-radius: 3px;
+}
+
+#container-3 .services .btn-services a {
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+#container-3 .services .btn-services:hover {
+  background-color:#985321;
+  transition: 0.5s;
+}
+
+/* footer */
+
+footer {
+  background-color: #d0a586;
+}
+
+footer .f-logo {
+  width: 15rem;
+}
+
+.footer-1 {
+  max-width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+footer .footer-1 .f-box {
+  /* border: 1px solid white; */
+  line-height: 30px;
+}
+
+footer .footer-1 p {
+  color: white;
+}
+
+footer .footer-1 .logo1,span {
+  color: white;
+}
+
+footer .footer-2 {
+  height: 50px;
+  background-color: #e4bea3;
+}
+
+footer .footer-2 p {
+  color: #985321;
+  text-align: center;
+  padding-top: 11px;
+}
+
+
+/* Book Online */
+
+section .booking2 {
+  color: black;
+  padding-top: 10rem;
+  margin: 0 10%;
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #deb666;
+}
+
+section .booking {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+
+section .booking .column {
+  padding: 1rem;
+}
+
+section .booking .text {
+  line-height: 35px;
+}
+
+section .booking .input-box {
+  height: 45px;
+  width: 100%;
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  color: #555;
+}
+
+.reservation .btn-reservation {
+  display: block;
+  margin: 80px auto;
+  background-color: #d0a586;
+  border: none;
+  min-height: 70px;
+  min-width: 500px;
+  border-radius: 10px;
+}
+
+.reservation .btn-reservation a {
+  font-size: 30px;
+  line-height: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.reservation .btn-reservation:hover {
+  background-color: #985321;
+  transition: .5s;
+}
